@@ -5,14 +5,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ComponentsRoutes } from './component.routing';
-import { NgbdpaginationBasicComponent } from './pagination/pagination.component';
-import { NgbdAlertBasicComponent } from './alert/alert.component';
-import { NgbdDropdownBasicComponent } from './dropdown-collapse/dropdown-collapse.component';
-import { NgbdnavBasicComponent } from './nav/nav.component';
-import { NgbdButtonsComponent } from './buttons/buttons.component';
-import { CardsComponent } from './card/card.component';
-import { TableComponent } from "./table/table.component";
 import { UserComponent } from './user/user.component';
+import { CreateUserComponent } from './user/createuser/create-user.component';
+import { UpdateUserComponent } from './user/updateuser/updateuser.component';
 
 @NgModule({
   imports: [
@@ -21,16 +16,11 @@ import { UserComponent } from './user/user.component';
     FormsModule,
     ReactiveFormsModule,
     NgbModule,
-    NgbdpaginationBasicComponent,
-    NgbdAlertBasicComponent,
-    NgbdDropdownBasicComponent,
-    NgbdnavBasicComponent,
-    NgbdButtonsComponent,
-    CardsComponent,
-    TableComponent
   ],
   declarations: [
-    UserComponent
+    UserComponent,
+    CreateUserComponent,
+    UpdateUserComponent
   ],
 })
 export class ComponentsModule { }
